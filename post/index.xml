@@ -6,14 +6,14 @@
     <description>Recent content in Posts on 万物的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Nov 2023 17:43:34 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 Nov 2023 21:52:00 +0800</lastBuildDate>
     <atom:link href="https://wanwu96.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1121test</title>
-      <link>https://wanwu96.github.io/post/1121test/</link>
-      <pubDate>Tue, 21 Nov 2023 17:43:34 +0800</pubDate>
-      <guid>https://wanwu96.github.io/post/1121test/</guid>
-      <description></description>
+      <title>swift递归枚举</title>
+      <link>https://wanwu96.github.io/post/swift%E9%80%92%E5%BD%92%E6%9E%9A%E4%B8%BE/</link>
+      <pubDate>Tue, 21 Nov 2023 21:52:00 +0800</pubDate>
+      <guid>https://wanwu96.github.io/post/swift%E9%80%92%E5%BD%92%E6%9E%9A%E4%B8%BE/</guid>
+      <description>递归枚举 递归枚举是一种枚举类型 有一个或多个枚举成员使用该枚举类型的作为枚举成员 在枚举成员前加上 indirect 来表示该成员可递归 enum ArithmeticExpression { case number(Int) indirect case addition(ArithmeticExpression, ArithmeticExpression) indirect case multiplication(ArithmeticExpression, ArithmeticExpression)</description>
     </item>
   </channel>
 </rss>

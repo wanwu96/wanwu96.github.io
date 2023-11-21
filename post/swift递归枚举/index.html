@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="swift递归枚举" />
+    <meta property="og:title" content="swift递归枚举" />
+    <meta property="twitter:title" content="swift递归枚举" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="万物, wanwu, Wanwu, , 万物的网络日志,万物的博客, Wanwu Blog, 博客, 个人网站, 互联网, iOS, Swift, swift, SwiftUI, swiftui">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Posts | 万物的博客 | Wanwu Blog</title>
+    <title>swift递归枚举 | 万物的博客 | Wanwu Blog</title>
 
-    <link rel="canonical" href="/post/">
+    <link rel="canonical" href="/post/swift%E9%80%92%E5%BD%92%E6%9E%9A%E4%B8%BE/">
 
     
     
@@ -151,14 +151,37 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home_bg_lu.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/home_bg_lu.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>万物的Blog </h1>
-                    
-		    <span class="subheading">你所热爱的，就是你的生活</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>swift递归枚举</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                    万物的Blog
+                             
+                            on 
+                            Tuesday, November 21, 2023
+                            
+                            
+                            
+                            
+                    </span>
                 </div>
             </div>
         </div>
@@ -171,19 +194,73 @@
 <article>
     <div class="container">
         <div class="row">
+
             
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	
+                
+                <h1 id="递归枚举">递归枚举</h1>
+<p>递归枚举是一种枚举类型
+有一个或多个枚举成员使用该枚举类型的作为枚举成员
+在枚举成员前加上 indirect 来表示该成员可递归</p>
+<pre tabindex="0"><code>enum ArithmeticExpression {
+    case number(Int)
+    indirect case addition(ArithmeticExpression, ArithmeticExpression)
+    indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+</code></pre><p>应用</p>
+<pre tabindex="0"><code>indirect enum ArithmeticExpression {
+    case number(Int)
+    case addition(ArithmeticExpression, ArithmeticExpression)
+    case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+
+func evaluate(_ expression:ArithmeticExpression) -&gt; Int {
+    switch expression {
+    case let .number(value):
+        return value
+    case let .addition(value1, value2):
+        return evaluate(value1) + evaluate(value2)
+    case let .multiplication(value1, value2):
+        return evaluate(value1) - evaluate(value2)
+    }
+}
+</code></pre><pre tabindex="0"><code>let num = ArithmeticExpression.number(5)
+print(evaluate(num))    // 打印 &#34;5&#34;
+print(evaluate(ArithmeticExpression.addition(num, num)))    // 打印 &#34;10&#34;
+print(evaluate(ArithmeticExpression.multiplication(num, num)))    // 打印 &#34;0&#34;
+</code></pre>
+
+                
+
+                
+
                 
 
 
 
-
             </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
             
             <div class="
                 col-lg-8 col-lg-offset-2
