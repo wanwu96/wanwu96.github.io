@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>万物的Blog</title>
+    <link>https://wanwu96.github.io/</link>
+    <description>Recent content on 万物的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Nov 2023 17:43:34 +0800</lastBuildDate>
+    <atom:link href="https://wanwu96.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1121test</title>
+      <link>https://wanwu96.github.io/post/1121test/</link>
+      <pubDate>Tue, 21 Nov 2023 17:43:34 +0800</pubDate>
+      <guid>https://wanwu96.github.io/post/1121test/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://wanwu96.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wanwu96.github.io/about/</guid>
+      <description>About Me Huabing Zhao is a software architect, an Istio Member and an ONAP PTL. He has a solid experience in the information and telecommunication technology industry for more than 17 years. Throughout his career, he has built a number of large-scale, cross-country software systems, most of them are still running in production. He loves open source and has been contributing to various open source projects, he is a member</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://wanwu96.github.io/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wanwu96.github.io/notes/</guid>
+      <description>Go 语言学习笔记 Envoy 学习笔记</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://wanwu96.github.io/search/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wanwu96.github.io/search/placeholder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posts Archive</title>
+      <link>https://wanwu96.github.io/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wanwu96.github.io/archive/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
